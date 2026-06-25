@@ -805,6 +805,62 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+/* Linktree-like buttons */
+.linktree-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto 0 auto;
+}
+
+.linktree-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.linktree-btn:hover {
+  background: rgba(0, 242, 254, 0.08);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 242, 254, 0.1);
+  color: var(--primary);
+}
+
+.linktree-btn i.fa-chevron-right {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  transition: var(--transition-smooth);
+}
+
+.linktree-btn:hover i.fa-chevron-right {
+  color: var(--primary);
+  transform: translateX(3px);
+}
+
+.linktree-icon-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.linktree-icon-label i {
+  font-size: 1.25rem;
+  width: 24px;
+  text-align: center;
+}
+
 /* Print Stylesheet for CV Page */
 @media print {
   body {
