@@ -655,7 +655,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
@@ -813,6 +813,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-100%);
     background: var(--black);
     width: 220px;
+    padding: 80px var(--space-md) var(--space-xl) var(--space-md);
   }
   
   .sidebar.active {
